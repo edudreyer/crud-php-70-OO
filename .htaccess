@@ -1,0 +1,22 @@
+# CONFIGURAR UTILIZAÇÃO DO HTTPS
+RewriteEngine On
+RewriteCond %{SERVER_PORT} 80
+
+RewriteRule ^usuario/?$ index.php [NC,L]
+RewriteRule ^usuario/edit/([a-z0-9\-]+)/?$ usuario_edit.php?codigo=$1 [NC]
+RewriteRule ^usuario/delete/([a-z0-9\-]+)/?$ usuario_delete.php?codigo=$1 [NC]
+RewriteRule ^usuario/insert/ usuario_insert.php [NC]
+RewriteRule ^usuario/mapa/([a-z0-9\-]+)/?$ usuario_enderecos.php?codigo=$1 [NC]
+
+
+
+RewriteRule ^endereco/?$ endereco.php [NC,L]
+RewriteRule ^endereco/edit/([a-z0-9\-]+)/?$ endereco_edit.php?codigo=$1 [NC]
+RewriteRule ^endereco/delete/([a-z0-9\-]+)/?$ endereco_delete.php?codigo=$1 [NC]
+RewriteRule ^endereco/insert/([a-z0-9\-]+)/?$ endereco_inserir.php?codigo=$1 [NC]
+
+
+RewriteRule ^tipo/?$ tipo.php [NC,L]
+RewriteRule ^tipo/edit/([a-z0-9\-]+)/?$ tipo_edit.php?codigo=$1 [NC]
+RewriteRule ^tipo/delete/([a-z0-9\-]+)/?$ tipo_delete.php?codigo=$1 [NC]
+RewriteRule ^tipo/insert/ tipo_inserir.php [NC]
