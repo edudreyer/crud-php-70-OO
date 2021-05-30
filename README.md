@@ -32,10 +32,10 @@ o	Editar tipos de endereços<br>
 o	Excluir tipos de endereços<br>
 
 <h1>Regras Aplicadas</h1>
-•	Desenvolver um CRUD para cadastro de usuários/endereços 
-•	Endereço completo do usuário conforme correios + o tipo de endereço 
-•	Criar entidades no banco – usuário / endereço 
-•	Após o cadastro do endereço mostrar um mapa (API Google Maps) com o endereço cadastrado mostrando o ponto no map
+•	Desenvolver um CRUD para cadastro de usuários/endereços <br>
+•	Endereço completo do usuário conforme correios + o tipo de endereço <br>
+•	Criar entidades no banco – usuário / endereço <br>
+•	Após o cadastro do endereço mostrar um mapa (API Google Maps) com o endereço cadastrado mostrando o ponto no map<br>
 
   
 <h1>Siga estes passos para executar o Projeto</h1>
